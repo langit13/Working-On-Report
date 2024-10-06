@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 56px; /* To ensure content is below the navbar */
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.main-content {
+    margin-top: 20px;
+    margin-right: 100%;
+}
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}

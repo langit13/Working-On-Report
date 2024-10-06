@@ -1,0 +1,75 @@
+
+/* admin css */
+.sidebar {
+    height: 100vh;
+    background-color: #343a40;
+    position: fixed;
+    width: 240px;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar a {
+    color: #ffffff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+.sidebar a.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 65px;
+}
+
+.profile h5 {
+    color: #f8f9fa;
+    margin-top: 10px;
+}
+
+.main-content {
+    margin-left: 35%;
+    padding: 20px;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main-content h1 {
+    font-size: 1.5rem;
+}
+
+.nav-section{
+    color: white;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table-container .btn-add-user {
+    margin-bottom: 15px;
+}
