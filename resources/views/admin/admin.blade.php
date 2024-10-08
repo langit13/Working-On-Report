@@ -14,7 +14,7 @@
 
         <!-- Bagian FEATURES -->
         <div class="nav-section">FEATURES</div>
-        <a href="#"><i class="fas fa-shopping-cart"></i> Product</a>
+        <a href="{{ route('admin.produk') }}"><i class="fas fa-shopping-cart"></i> Product</a>
 
     </div>
 
@@ -30,7 +30,7 @@
                     <div class="p-6 text-gray-900">
                         <!-- Tombol Tambah User -->
                         <div class="table-container">
-                            <button class="btn btn-primary btn-add-user"><i class="fas fa-plus"></i> Tambah User</button>
+                            <a href="{{ route('admin.create') }}" class="btn btn-primary btn-add-user"><i class="fas fa-fa-plus"></i> Tambah User</a>
 
                             <!-- Tabel untuk CRUD User -->
                             <table class="table table-striped table-bordered">
@@ -44,26 +44,23 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $no = 1 ?>
+                                    @foreach($rows as $row)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Muhammad Azmi Nur Iman</td>
-                                        <td>azmi@example.com</td>
-                                        <td>Admin</td>
+                                        <td>{{$no++}}</td>
+                                        <td>{{$row->name}}</td>
+                                        <td>{{$row->email}}</td>
+                                        <td>{{ $roles[$row->role] ?? 'Unknown' }}</td>
                                         <td>
-                                            <button class="btn btn-sm btn-primary">Edit</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
+                                            <a class="btn btn-sm btn-warning" href="{{ route('admin.edit', $row) }}">Ubah</a>
+                                            <form method="POST" action="{{ route('admin.destroy', $row) }}" style="display: inline-block;">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button class="btn btn-sm btn-danger" onclick="return confirm('Hapus Data?')">Hapus</button>
+                                            </form>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>John Doe</td>
-                                        <td>john@example.com</td>
-                                        <td>User</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-primary">Edit</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
-                                        </td>
-                                    </tr>
+                                    @endforeach
                                     <!-- Tambahkan baris data lainnya di sini -->
                                 </tbody>
                             </table>
