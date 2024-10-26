@@ -1,6 +1,6 @@
 <<<<<<< HEAD
-# LaravelSalesPurchasing
-berikut merupakan hasil kode program laravel yang digunakan untuk memenuhi tugas Studi Independen pada maxy academy di day yang ke 18
+# Working On Report
+berikut merupakan hasil kode program laravel yang digunakan untuk memenuhi tugas Studi Independen pada maxy academy di day yang ke 29
 =======
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
