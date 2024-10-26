@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 
@@ -77,6 +78,12 @@ Route::get('/checkout/success', function() {
 
 Route::get('/orders', [TransactionController::class, 'orders'])->name('transactions.orders');
 
+
+Route::get('/reporting-supplier', [ProdukController::class, 'reportingSupplier'])->name('reporting-supplier');
+
+Route::get('/reporting', [ReportController::class, 'reporting'])->name('reporting-page');
+Route::get('/reporting/all-data-produk', [ReportController::class, 'alldataproduk'])->name('reporting.all.data.produk');
+Route::get('/reporting/chart-produk', [ReportController::class, 'chartproduk'])->name('reporting.chart.produk');
 
 
 require __DIR__.'/auth.php';

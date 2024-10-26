@@ -52,6 +52,7 @@
                             </td>
                             <td class="text-center">
                                 <a href="{{route('supplier.edit', $k->id)}}" class="btn btn-sm btn-warning">Edit</a>
+                                <a href="{{ route('reporting-supplier') }}" class="btn btn-sm btn-secondary">Reporting</a>
                                 <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal{{$k->id}}">Hapus</button>
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal{{$k->id}}" tabindex="-1" aria-labelledby="exampleModalLabel"

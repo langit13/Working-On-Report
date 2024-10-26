@@ -11,10 +11,15 @@
         <!-- Bagian DATA MASTER -->
         <div class="nav-section">DATA MASTER</div>
         <a href="{{ route('admin') }}" ><i class="fas fa-users"></i> Users</a>
-
+        
+        <!-- Bagian REPORTING -->
+        <div class="nav-section">REPORTING</div>
+        <a href="{{ route('reporting-page') }}"><i class="fas fa-chart-line"></i> Reporting</a>
+        
         <!-- Bagian FEATURES -->
         <div class="nav-section">FEATURES</div>
         <a href="#" class="active"><i class="fas fa-shopping-cart"></i> Product</a>
+
 
     </div>
     <div class="container py-5" style="width: 70%; margin-left:23%;">
